@@ -1,0 +1,17 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.film-banner{
+  width: 250px;
+  height: 300px;
+  max-width:250px;
+}
+.film-name{
+    font-size: 20px;
+    hyphens: auto;
+}
+.film-genres{
+  font-size: 15px;
+  color: grey;
+  hyphens: auto;
+}

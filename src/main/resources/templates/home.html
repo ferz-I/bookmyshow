@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+<body>
+    <header th:insert="~{blocks/header.html :: header}"></header>
+    <nav th:insert="~{blocks/navbar.html :: navbar}"></nav>
+    <p class="active-slide" hidden>2</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <h3>Recommended Movies</h3>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item" id="recfilm1">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/harry-potter-and-the-sorcerers-stone.jpg"alt="First slide">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/john-wick-chapter-3.jpg" alt="Second slide">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/flash.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active" id="recfilm2">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/john-wick-chapter-3.jpg" alt="First slide">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/harry-potter-and-the-sorcerers-stone.jpg" alt="Second slide">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/flash.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="recfilm3">
+                        <div class="row">
+                            <div class="card">
+                                <img class="d-block w-100 card-img-top" src="images/harry-potter-and-the-sorcerers-stone.jpg" alt="First slide">
+                                <div class="card-body">
+                                    <div class="card-title">Harry Potter and the Sorcerer`s Stone</div>
+                                    <div class="film-genres">Adventure</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/flash.jpg" alt="Second slide">
+                                    <strong class="card-text film-name">Flash</strong>
+                                    <h5 class="film-genres">Action</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="d-block w-100 film-banner" src="images/john-wick-chapter-3.jpg" alt="Third slide">
+                                    <strong class="film-name">John Wick: Chapter 3</strong>
+                                    <p class="film-genres">Action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" onclick="toggleCarousel(true);">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" onclick="toggleCarousel(false);">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+    </div>
+    <script src="javascript/styles.js"></script>
+</body>
+</html>
